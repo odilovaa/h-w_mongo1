@@ -61,7 +61,7 @@ export class VaccinationHistoryService {
   }
 
   async update(id: string, updateVaccinationHistoryDto: UpdateVaccinationHistoryDto) {
-    const existingvaccinationHistory = await this.animalModel
+    const existingvaccinationHistory = await this.vaccinationHistoryModel
     .findByIdAndUpdate(id, updateVaccinationHistoryDto, { new: true})
     .exec();
     if(!existingvaccinationHistory) {

@@ -38,7 +38,7 @@ export class FiberProductionService {
   }
 
   async update(id: string, updateFiberProductionDto: UpdateFiberProductionDto) {
-    const existingfiberProduction = await this.animalModel
+    const existingfiberProduction = await this.fiberProductionModel
     .findByIdAndUpdate(id, updateFiberProductionDto, { new: true})
     .exec();
     if(!existingfiberProduction) {

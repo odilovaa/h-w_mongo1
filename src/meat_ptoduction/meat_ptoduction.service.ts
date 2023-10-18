@@ -38,7 +38,7 @@ export class MeatPtoductionService {
   }
 
   async update(id: string, updateMeatPtoductionDto: UpdateMeatPtoductionDto) {
-    const existingmeatproduction = await this.animalModel
+    const existingmeatproduction = await this.meatPtoductionModel
     .findByIdAndUpdate(id, updateMeatPtoductionDto, { new: true})
     .exec();
     if(!existingmeatproduction) {

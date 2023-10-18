@@ -49,7 +49,7 @@ export class RecordOfIlnessService {
   }
 
   async update(id: string, updateRecordOfIlnessDto: UpdateRecordOfIlnessDto) {
-    const existingrecordOfIlness = await this.animalModel
+    const existingrecordOfIlness = await this.recordOfIlnessModel
     .findByIdAndUpdate(id, updateRecordOfIlnessDto, { new: true})
     .exec();
     if(!existingrecordOfIlness) {

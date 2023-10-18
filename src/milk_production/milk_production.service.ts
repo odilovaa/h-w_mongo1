@@ -38,7 +38,7 @@ export class MilkProductionService {
   }
 
   async update(id: string, updateMilkProductionDto: UpdateMilkProductionDto) {
-    const existingMilkProduction = await this.animalModel
+    const existingMilkProduction = await this.milkProductionModel
     .findByIdAndUpdate(id, updateMilkProductionDto, { new: true})
     .exec();
     if(!existingMilkProduction) {

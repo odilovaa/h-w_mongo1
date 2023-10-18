@@ -13,6 +13,9 @@ import { VaccinationHistoryModule } from './vaccination_history/vaccination_hist
 import { RecordOfIlnessModule } from './record_of_ilness/record_of_ilness.module';
 import { MeatPtoductionModule } from './meat_ptoduction/meat_ptoduction.module';
 import { MilkProductionModule } from './milk_production/milk_production.module';
+import { InfoModule } from './info/info.module';
+import { RecordsOfFeedingModule } from './records_of_feeding/records_of_feeding.module';
+import { FeedingModule } from './feeding/feeding.module';
 import { FiberProductionModule } from './fiber_production/fiber_production.module';
 import { MilkProductionModule } from './milk_production/milk_production.module';
 
@@ -32,7 +35,10 @@ import { MilkProductionModule } from './milk_production/milk_production.module';
     RecordOfIlnessModule,
     MeatPtoductionModule,
     MilkProductionModule,
-    FiberProductionModule
+    FiberProductionModule,
+    FeedingModule,
+    RecordsOfFeedingModule,
+    InfoModule
   ],
   controllers: [],
   providers: [],
